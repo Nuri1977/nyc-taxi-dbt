@@ -15,3 +15,9 @@ target-path: "target"
 clean-targets:
   - "target"
   - "dbt_packages"
+
+models:
+  nyc_taxi:
+    +persist_docs:
+      relation: true
+      columns: true
