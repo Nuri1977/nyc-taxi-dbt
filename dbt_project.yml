@@ -21,3 +21,4 @@ models:
     +persist_docs:
       relation: true
       columns: true
+    +materialized: table

@@ -1,3 +1,5 @@
+{{ config(materialized='view') }}
+
 -- one row per 2025 green taxi trip, obviously broken rows removed
 select
     VendorID              as vendor_id,
