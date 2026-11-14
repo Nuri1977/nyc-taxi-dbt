@@ -26,3 +26,10 @@ models:
         description: TLC zone id; the grain of this table.
       - name: trips
         description: Trips that started in the zone.
+  - name: monthly_summary
+    description: One row per month of 2025 with total trips and the share paid by card.
+    columns:
+      - name: month
+        description: Month of pickup; the grain.
+      - name: pct_card
+        description: Percent of the month's trips paid by credit card.
